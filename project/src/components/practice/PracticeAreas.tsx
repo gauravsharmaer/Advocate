@@ -1,43 +1,43 @@
-import React from 'react';
-import { Scale, Briefcase, Building2, Car, Home, Users } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Scale, Briefcase, Building2, Car, Home, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const practiceAreas = [
   {
-    title: 'Criminal Defense',
-    description: 'Protecting your rights in criminal cases',
+    title: "Criminal Defense",
+    description: "Protecting your rights in criminal cases",
     icon: Scale,
-    slug: 'criminal-defense',
+    slug: "criminal-defense",
   },
   {
-    title: 'Corporate Law',
-    description: 'Legal solutions for businesses',
+    title: "Corporate Law",
+    description: "Legal solutions for businesses",
     icon: Building2,
-    slug: 'corporate-law',
+    slug: "corporate-law",
   },
   {
-    title: 'Personal Injury',
-    description: 'Getting you the compensation you deserve',
+    title: "Personal Injury",
+    description: "Getting you the compensation you deserve",
     icon: Users,
-    slug: 'personal-injury',
+    slug: "personal-injury",
   },
   {
-    title: 'Real Estate',
-    description: 'Handling all property-related matters',
+    title: "Real Estate",
+    description: "Handling all property-related matters",
     icon: Home,
-    slug: 'real-estate',
+    slug: "real-estate",
   },
   {
-    title: 'Auto Accidents',
-    description: 'Expert representation for accident victims',
+    title: "Auto Accidents",
+    description: "Expert representation for accident victims",
     icon: Car,
-    slug: 'auto-accidents',
+    slug: "auto-accidents",
   },
   {
-    title: 'Employment Law',
-    description: 'Protecting workplace rights',
+    title: "Employment Law",
+    description: "Protecting workplace rights",
     icon: Briefcase,
-    slug: 'employment-law',
+    slug: "employment-law",
   },
 ];
 
@@ -50,10 +50,10 @@ export function PracticeAreas() {
             Expert Legal Services
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Our Practice Areas
+            Practice Areas
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            We offer comprehensive legal services across multiple practice areas,
+            I offer comprehensive legal services across multiple practice areas,
             ensuring expert representation for all your legal needs.
           </p>
         </div>
@@ -68,8 +68,12 @@ export function PracticeAreas() {
                 <div className="rounded-lg bg-gray-50 p-2 ring-1 ring-gray-200">
                   <area.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" />
                 </div>
-                <dt className="mt-4 font-semibold text-gray-900">{area.title}</dt>
-                <dd className="mt-2 leading-7 text-gray-600">{area.description}</dd>
+                <dt className="mt-4 font-semibold text-gray-900">
+                  {area.title}
+                </dt>
+                <dd className="mt-2 leading-7 text-gray-600">
+                  {area.description}
+                </dd>
               </Link>
             ))}
           </dl>

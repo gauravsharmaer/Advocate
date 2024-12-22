@@ -11,7 +11,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="text-white font-bold text-xl">
-              Advocate Seema Vashishta
+              Advocate Seema Vashishtha
             </Link>
           </div>
           <div className="hidden md:block">

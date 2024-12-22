@@ -1,22 +1,25 @@
-import React from 'react';
-import { Quote } from 'lucide-react';
+import React from "react";
+import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    content: "The team's dedication to my case was exceptional. They fought tirelessly for my rights and achieved an outcome I never thought possible.",
+    content:
+      "Seema's dedication to my case was exceptional. She fought tirelessly for my rights and achieved an outcome I never thought possible.",
     author: "Sarah Johnson",
-    role: "Personal Injury Client"
+    role: "Personal Injury Client",
   },
   {
-    content: "Professional, knowledgeable, and compassionate. They guided me through every step of my case with expertise and genuine care.",
+    content:
+      "Professional, knowledgeable, and compassionate. She guided me through every step of my case with expertise and genuine care.",
     author: "Michael Chen",
-    role: "Corporate Law Client"
+    role: "Corporate Law Client",
   },
   {
-    content: "I couldn't have asked for better representation. Their expertise in criminal defense made all the difference in my case.",
+    content:
+      "I couldn't have asked for better representation. Her expertise in criminal defense made all the difference in my case.",
     author: "David Thompson",
-    role: "Criminal Defense Client"
-  }
+    role: "Criminal Defense Client",
+  },
 ];
 
 export function Testimonials() {
@@ -28,7 +31,7 @@ export function Testimonials() {
             Testimonials
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            What Our Clients Say
+            What My Clients Say
           </p>
         </div>
         <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">

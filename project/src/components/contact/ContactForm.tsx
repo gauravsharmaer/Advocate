@@ -32,15 +32,13 @@ export function ContactForm() {
             <h2 className="text-2xl font-bold text-gray-900">
               Contact Information
             </h2>
-            <p className="mt-4 text-lg text-gray-500">
-              Get in touch with our legal team
-            </p>
+            <p className="mt-4 text-lg text-gray-500">Get in touch with me</p>
 
             <div className="mt-8 space-y-6">
               <div className="flex items-center">
                 <MapPin className="h-6 w-6 text-indigo-600" />
                 <span className="ml-4 text-gray-600">
-                  District Court Rewari (Haryana)
+                  District Court Rewari,Haryana(123401)
                 </span>
               </div>
               <div className="flex items-center">
