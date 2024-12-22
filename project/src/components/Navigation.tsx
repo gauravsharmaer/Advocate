@@ -1,6 +1,6 @@
-import React from 'react';
-import { Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -11,7 +11,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="text-white font-bold text-xl">
-              ANDERSON LAW
+              Advocate Seema Vashishta
             </Link>
           </div>
           <div className="hidden md:block">
@@ -19,19 +19,34 @@ export function Navigation() {
               <Link to="/" className="text-gray-300 hover:text-white px-3 py-2">
                 Home
               </Link>
-              <Link to="/practice-areas" className="text-gray-300 hover:text-white px-3 py-2">
+              <Link
+                to="/practice-areas"
+                className="text-gray-300 hover:text-white px-3 py-2"
+              >
                 Practice Areas
               </Link>
-              <Link to="/about" className="text-gray-300 hover:text-white px-3 py-2">
+              <Link
+                to="/about"
+                className="text-gray-300 hover:text-white px-3 py-2"
+              >
                 About
               </Link>
-              <Link to="/case-results" className="text-gray-300 hover:text-white px-3 py-2">
+              <Link
+                to="/case-results"
+                className="text-gray-300 hover:text-white px-3 py-2"
+              >
                 Case Results
               </Link>
-              <Link to="/resources" className="text-gray-300 hover:text-white px-3 py-2">
+              <Link
+                to="/resources"
+                className="text-gray-300 hover:text-white px-3 py-2"
+              >
                 Resources
               </Link>
-              <Link to="/contact" className="text-gray-300 hover:text-white px-3 py-2">
+              <Link
+                to="/contact"
+                className="text-gray-300 hover:text-white px-3 py-2"
+              >
                 Contact
               </Link>
             </div>

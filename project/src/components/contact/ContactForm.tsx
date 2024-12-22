@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { Send, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import React, { useState } from "react";
+import { Send, MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -14,7 +14,9 @@ export function ContactForm() {
     console.log(formData);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -27,25 +29,35 @@ export function ContactForm() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Information */}
           <div className="lg:col-span-1">
-            <h2 className="text-2xl font-bold text-gray-900">Contact Information</h2>
-            <p className="mt-4 text-lg text-gray-500">Get in touch with our legal team</p>
-            
+            <h2 className="text-2xl font-bold text-gray-900">
+              Contact Information
+            </h2>
+            <p className="mt-4 text-lg text-gray-500">
+              Get in touch with our legal team
+            </p>
+
             <div className="mt-8 space-y-6">
               <div className="flex items-center">
                 <MapPin className="h-6 w-6 text-indigo-600" />
-                <span className="ml-4 text-gray-600">123 Law Street, Suite 100<br />New York, NY 10001</span>
+                <span className="ml-4 text-gray-600">
+                  District Court Rewari (Haryana)
+                </span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-6 w-6 text-indigo-600" />
-                <span className="ml-4 text-gray-600">(555) 123-4567</span>
+                <span className="ml-4 text-gray-600">+91-7973885109</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-6 w-6 text-indigo-600" />
-                <span className="ml-4 text-gray-600">contact@andersonlaw.com</span>
+                <span className="ml-4 text-gray-600">
+                  seemasharma76588@gmail.com
+                </span>
               </div>
               <div className="flex items-center">
                 <Clock className="h-6 w-6 text-indigo-600" />
-                <span className="ml-4 text-gray-600">Mon-Fri: 9:00 AM - 6:00 PM</span>
+                <span className="ml-4 text-gray-600">
+                  Mon-Fri: 9:00 AM - 5:00 PM
+                </span>
               </div>
             </div>
           </div>
@@ -54,7 +66,10 @@ export function ContactForm() {
           <div className="lg:col-span-2">
             <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Name
                 </label>
                 <input
@@ -68,7 +83,10 @@ export function ContactForm() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Email
                 </label>
                 <input
@@ -82,7 +100,10 @@ export function ContactForm() {
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Phone
                 </label>
                 <input
@@ -96,7 +117,10 @@ export function ContactForm() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Message
                 </label>
                 <textarea

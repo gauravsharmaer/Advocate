@@ -1,6 +1,6 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Hero() {
   return (
@@ -17,8 +17,9 @@ export function Hero() {
           Dedicated to Your Success
         </h1>
         <p className="mt-6 text-xl text-gray-300 max-w-3xl">
-          With over 20 years of experience, we provide exceptional legal representation
-          when you need it most. Your rights matter, and we're here to protect them.
+          With over 5 years of experience, we provide exceptional legal
+          representation when you need it most. Your rights matter, and we're
+          here to protect them.
         </p>
         <div className="mt-10 flex space-x-4">
           <Link
